@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Calculator Pro Max Ultra Universe AI++ · SMP Studios</title>
+    <meta
+      name="description"
+      content="Kalkulator parodi paling premium di multiverse. VAR-approved, banana-certified, 100% duit khayalan."
+    />
+    <meta property="og:title" content="Calculator Pro Max Ultra Universe AI++" />
+    <meta property="og:description" content="Fake premium. Real vibes. By SMP Studios." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E🐐%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orbs" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <!-- LOGIN -->
+    <section id="login" class="screen">
+      <div class="glass card login-card">
+        <div class="mascot" data-mood="happy">🐐</div>
+        <div class="brand">SMP STUDIOS</div>
+        <h1 class="title shine">Calculator Pro Max<br />Ultra Universe AI++</h1>
+        <p class="muted">
+          Login dulu, mortal. Kalkulator ini terlalu premium buat dipakai anonim.
+        </p>
+        <form id="login-form" class="stack">
+          <input
+            id="login-name"
+            class="input"
+            placeholder="Nama legendaris kamu"
+            maxlength="24"
+            autocomplete="off"
+            required
+          />
+          <button class="btn btn-primary glow" type="submit">Masuk ke Multiverse</button>
+        </form>
+        <p class="micro">🚫 Tanpa backend · 🎮 100% parodi · 💸 0 rupiah beneran</p>
+      </div>
+    </section>
+    <!-- CALCULATOR -->
+    <section id="app" class="screen hidden">
+      <header class="topbar">
+        <div>
+          <div class="brand">SMP STUDIOS</div>
+          <div class="hi">Hi, <span id="who" class="shine">?</span></div>
+        </div>
+        <button id="logout" class="btn btn-soft">Log out</button>
+      </header>
+      <div class="glass card row">
+        <div class="mascot" id="mascot" data-mood="happy">🐐</div>
+        <div class="grow">
+          <div class="usage">
+            <span>Usage</span>
+            <span id="usage-text" class="mono">0 / 5</span>
+          </div>
+          <div class="bar"><div id="bar-fill" class="bar-fill"></div></div>
+          <div id="usage-note" class="muted small">5 kalkulasi legendaris tersisa.</div>
+        </div>
+      </div>
+      <div class="glass card display">
+        <div id="event" class="event">Calculator Pro Max Ultra Universe AI++</div>
+        <div id="expr" class="expr">0</div>
+      </div>
+      <div class="glass card keypad">
+        <div class="grid" id="keys"></div>
+      </div>
+      <div class="glass-soft card ach">
+        <div class="label">Achievements</div>
+        <div id="ach-list" class="chips"></div>
+      </div>
+      <p class="micro center">
+        Made by SMP Studios · Squad Minion Plenger · 100% parodi, 0% duit beneran
+      </p>
+    </section>
+    <!-- PREMIUM MODAL -->
+    <div id="premium" class="modal hidden">
+      <div class="glass card modal-inner">
+        <div class="row">
+          <div class="mascot" data-mood="shocked">😱</div>
+          <div class="grow">
+            <div class="brand">Calculator Pro Max Ultra Universe AI++</div>
+            <h2 class="title shine">Premium Required 🐐</h2>
+            <p class="muted">
+              Kamu sudah pakai 5 kalkulasi legendaris. Upgrade untuk matematika tak terbatas.
+            </p>
+          </div>
+        </div>
+        <div id="plans" class="plans"></div>
+        <p class="micro center">🚫 Tanpa pembayaran nyata. 🎮 By SMP Studios.</p>
+      </div>
+    </div>
+    <!-- FAKE PAYMENT -->
+    <div id="pay" class="modal hidden">
+      <div class="glass card modal-inner narrow">
+        <!-- confirm -->
+        <div id="pay-confirm" class="stack center">
+          <div id="pay-emoji" class="huge">💸</div>
+          <h2 class="title">Konfirmasi <span id="pay-name">?</span></h2>
+          <p class="muted">
+            Yakin mau spend <span id="pay-price" class="shine">?</span> duit imajinasi?
+          </p>
+          <div class="glass-soft note">No real card, no real money. 100% vibes only.</div>
+          <div class="row gap">
+            <button id="pay-cancel" class="btn btn-soft grow">Cancel</button>
+            <button id="pay-go" class="btn btn-primary glow grow">Confirm</button>
+          </div>
+        </div>
+        <!-- processing -->
+        <div id="pay-processing" class="stack center hidden">
+          <div class="mascot big" data-mood="shocked">😱</div>
+          <div id="pay-step" class="step">🏦 Connecting to bank...</div>
+          <div class="bar"><div id="pay-bar" class="bar-fill gold"></div></div>
+          <p class="micro">VAR sedang mengecek transaksi kamu...</p>
+        </div>
+        <!-- success -->
+        <div id="pay-success" class="stack center hidden">
+          <div class="sticker">
+            <div>TRIMA</div>
+            <div>KASIH</div>
+            <div class="sticker-sub">✨ premium unlocked ✨</div>
+          </div>
+          <h2 class="title">Payment Successful!</h2>
+          <p class="muted">Kamu bayar 0 rupiah beneran. 🐐 GOAT status.</p>
+          <button id="pay-done" class="btn btn-primary">Continue calculating</button>
+        </div>
+      </div>
+    </div>
+    <div id="toast" class="toast hidden"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
